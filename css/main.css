@@ -6,7 +6,26 @@ body{
     background: #e3e3e3;
 }
 
+.catnip{
+	font-size: 10em;
+	padding: 30% 0%;
+	font-family: sans-serif;}
 
 .content2{
     display: none;}
 
+.image, .map{
+	width: 80%;
+	height: auto;}
+
+ .square {
+    border: 1px solid white;
+    margin: 5px;}
+
+.square img {
+    height: 200px;
+    width: 150px;}
+
+#modal1 a {
+    float: right;
+}

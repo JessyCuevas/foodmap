@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lyft App</title>
+  <title>Map App</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">     
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,14 +20,14 @@
 <section class="container">
 <section>
   <div class="content">
-    <h5 class="center-align catnip">CatNip</h5>
+    <h1 class="center-align catnip">CatNip</h1>
   </div>
 </section>
 
 <!--Filtro-->
 <section class="content2">
 
-  <section id="after"  class="col s4 offset-s4 content2 center-align">
+  <section class="col s4 offset-s4 center-align">
 
         <h1>CatNip</h1>
         <img class="map" src="assets/images/map.png" alt="">
@@ -38,22 +38,20 @@
 
   <!--Resultados-->
 
-  <div class="row center-align">
-    <div class="col s12 m4 l4">
-      <img class="searc-img" src="assets/images/cat-1.jpg"></div>
-    <div class="col s12 m4 l4">
-      <img class="searc-img" src="assets/images/cat-2.jpg"></div>
-    <div class="col s12 m4 l4 ">
-      <img class="searc-img" src="assets/images/cat-3.jpg"></div>
-    <div class="col s12 m4 l4">
-      <img class="searc-img" src="assets/images/cat-4.jpg"></div>
-    <div class="col s12 m4 l4">
-      <img class="searc-img" src="assets/images/cat-5.jpg"></div>
-    <div class="col s12 m4 l4 ">
-      <img class="searc-img" src="assets/images/cat-1.jpg"></div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <img id="images" src="" alt="">
+      <p id="name-modal">Info-Card</p>
+      <p id="adress-modal"></p>
+      <p id="food-modal"></p>
+      <p id="time-modal"></p>
+    </div>
+    <a href="#!" class="modal-action modal-close btn-flat">Close</a>
   </div>
 
-  <footer class="page-footer">
+ <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -76,16 +74,18 @@
             © 2014 Copyright CatNip
             </div>
           </div>
-        </footer>
+ </footer> 
 
 </section>
 
   <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/app.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/data.js"></script>
+
 
 </body>
 
