@@ -1,10 +1,5 @@
-
-
-
 var data = data;
-//*Modal*//
-$(document).ready(function() {
-   $('.modal').modal();  
+
 
 //*Splash*//
     setTimeout(function() {
@@ -14,14 +9,17 @@ $(document).ready(function() {
         $(".content2").fadeIn(1500);
     },3000);
 
-//*Pintar-Info*//
-	//pintarInfo()
-    //$('#input').keyup(filterRestaurants)
-    //$('.modal').modal();
-    //$('a').click(paintModal)
+//*Modal*//
+$(document).ready(function() {
+   $('.modal').modal();  
 
-paintModal()
-$(".modal1").keyup();
+
+
+//Pintar-Info*//
+	pintarInfo()
+    $('#input').keyup(filterRestaurants)
+    $('.modal').modal();
+    $('a').click(paintModal)
 
 //-----Funciones para pintar info-----//
 function paintModal() {
@@ -40,18 +38,17 @@ function paintModal() {
     $('#pic-modal').attr('src', pic)
 }
 
-//function pintarInfo() {
-//    for (var i = 0; i < data.length; i++) {
-//        var $gralInfo = $('<div />', { 'class': 'square' });	
-//        var $infoCard = $('<a />', { 'class': 'waves-effect waves-light modal-trigger' });
-//        $infoCard.text('<p />', 'test!');
-//        $infoCard.attr('href', '#modal1');
-//        var $infoName = $('<h4 />');
-//        var $infoAdress = $('<p />', { 'class': 'adress' });
-//        var $infoImages = $('<img />', { 'class': 'images' });
-//        $infoImages.attr('src', data[i]['photo']);
-
-
+function pintarInfo() { 
+    console.log(data);
+    for (var i = 0; i < data.length; i++) {
+        var $gralInfo = $('<div />', { 'class': 'square' });	
+        var $infoCard = $('<a />', { 'class': 'waves-effect waves-light modal-trigger' });
+        $infoCard.text('<p />', 'test!');
+        $infoCard.attr('href', '#modal1');
+        var $infoName = $('<h4 />');
+        var $infoAdress = $('<p />', { 'class': 'adress' });
+        var $infoImages = $('<img />', { 'class': 'images' });
+        //$infoImages.attr('src', data[i]['photo']);
         //var $infoFood = $('<p />', { 'class': 'food' });
         //var $infoTime = $('<p />', { 'class': 'time' });
         //$infoName.append(data[i]['name']);
@@ -59,8 +56,8 @@ function paintModal() {
         //$infoFood.append('Comida: ' + data[i]['food']);
         //$rinfoTime.append('Horario: ' + data[i]['horarios']);
         //$('.content2').append($gralInfo);
-//    }
-//}
+    }
+}
 
 
 });
