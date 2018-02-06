@@ -3,9 +3,14 @@
     box-sizing: border-box;
 }
 body{
-    background: #e3e3e3;
+    background: #fff;
 }
 
+#logo{
+    margin-top: 10em;
+    width: 25em;
+    height: auto;
+}
 .catnip{
 	font-size: 7em;
     margin-top: 2em;
